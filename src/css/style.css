@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.intro {
+    height: 100vh;
+}
+
+.intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.intro h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 70px;
+    color: #fb8b82;
+    transform: translate(-50%, -50%);
+}
+
+#section1 {
+    /*height: 100vh;*/
+    height: 50vh;
+    color: black;
+}
+
+#section1 h1,
+#section3 h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 80px;
+}
+
+#section2 {
+    /*opacity: 50%;*/
+    /*padding-top: 100px;
+    text-align: center;
+    font-size: 80px;*/
+}
