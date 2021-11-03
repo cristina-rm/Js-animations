@@ -59,7 +59,7 @@ body {
 
 #section2 .card2 .truck-image,
 #section3 .card3 .truck-image {
-    min-height: 40vh;
+    /*min-height: 40vh;*/
 }
 
 #section3 .card3 {

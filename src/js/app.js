@@ -58,8 +58,7 @@ container2.addEventListener("mouseenter", (e) => {
     // Pop out effect
     title2.style.transform = "translateZ(180px)";
     button2.style.transform = "translateZ(160px)";
-    truckImage.style.transform = "translateZ(180px)";
-    truckImage.style.transform = "scale(1.2)";
+    truckImage.style.transform = "translateZ(200px) rotateZ(15deg) scale(1.2)";
 });
 
 // Animate out
@@ -70,7 +69,7 @@ container2.addEventListener("mouseleave", (e) => {
     // Pop back effect
     title2.style.transform = "translateZ(0px)";
     button2.style.transform = "translateZ(0px)";
-    truckImage.style.transform = "translateZ(0px)";
+    truckImage.style.transform = "translateZ(0px) rotateZ(0deg) scale(1)";
 });
 
 // ************************** Section 3 **************************
@@ -82,8 +81,8 @@ const truckImage3 = card3.querySelector(".truck-image");
 const button3 = card3.querySelector(".button3");
 
 container3.addEventListener("mousemove", (e) => {
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 40;
-    let yAxis = (window.innerHeight / 2 - e.pageY) / 21;
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 20;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 24;
     card3.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
 });
 
@@ -92,23 +91,20 @@ container3.addEventListener("mouseenter", (e) => {
     card3.style.transform = "none";
 
     // Pop out effect
-    truckImage3.style.transform = "translateZ(150px)";
-    truckImage3.style.transform = "scale(1.3)";
-    title3.style.transform = "translateZ(120px)";
-    title3.style.transform = "scale(1.2)";
+    truckImage3.style.transform = "translateZ(-150px) rotateZ(10deg) scale(1.3)";
+    title3.style.transform = "translateZ(180px) scale(1.2)";
     description3.style.transform = "translateZ(120px)";
-    button3.style.transform = "translateZ(175px)";
+    button3.style.transform = "translateZ(-200px)";
 });
 
 // Animate out
 container3.addEventListener("mouseleave", (e) => {
     // card3.style.transition = "all 0.5s ease";
-    // card3.style.transition = "all 1s";
     card3.style.transform = `rotateY(0deg) rotateX(0deg)`;
 
     // Pop back effect
-    truckImage3.style.transform = "translateZ(0px)";
-    title3.style.transform = "translateZ(0px)";
+    truckImage3.style.transform = "translateZ(0px) rotateZ(0deg) scale(1)";
+    title3.style.transform = "translateZ(0px) scale(1)";
     description3.style.transform = "translateZ(0px)";
     button3.style.transform = "translateZ(0px)";
 });
