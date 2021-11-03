@@ -54,18 +54,23 @@ container2.addEventListener("mousemove", (e) => {
 // Animate in
 container2.addEventListener("mouseenter", (e) => {
     card2.style.transform = "none";
+
     // Pop out effect
-    /*title2.style.transform = "translateZ(150px)";
-    description2.style.transform = "translateZ(50px)";
-    truckImage.style.transform = "translateZ(50px)";*/
+    title2.style.transform = "translateZ(180px)";
+    button2.style.transform = "translateZ(160px)";
+    truckImage.style.transform = "translateZ(180px)";
+    truckImage.style.transform = "scale(1.2)";
 });
 
 // Animate out
 container2.addEventListener("mouseleave", (e) => {
     // card2.style.transition = "all 0.5s ease";
     card2.style.transform = `rotateY(0deg) rotateX(0deg)`;
+
     // Pop back effect
-    // title2.style.transform = "translateZ(0px)";
+    title2.style.transform = "translateZ(0px)";
+    button2.style.transform = "translateZ(0px)";
+    truckImage.style.transform = "translateZ(0px)";
 });
 
 // ************************** Section 3 **************************
@@ -88,8 +93,9 @@ container3.addEventListener("mouseenter", (e) => {
 
     // Pop out effect
     truckImage3.style.transform = "translateZ(150px)";
-    truckImage3.style.transform = "scale(1.5)";
+    truckImage3.style.transform = "scale(1.3)";
     title3.style.transform = "translateZ(120px)";
+    title3.style.transform = "scale(1.2)";
     description3.style.transform = "translateZ(120px)";
     button3.style.transform = "translateZ(175px)";
 });
@@ -97,6 +103,7 @@ container3.addEventListener("mouseenter", (e) => {
 // Animate out
 container3.addEventListener("mouseleave", (e) => {
     // card3.style.transition = "all 0.5s ease";
+    // card3.style.transition = "all 1s";
     card3.style.transform = `rotateY(0deg) rotateX(0deg)`;
 
     // Pop back effect

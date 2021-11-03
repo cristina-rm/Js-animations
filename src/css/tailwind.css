@@ -1108,6 +1108,15 @@ select {
 .right-5 {
 	right: 1.25rem;
 }
+.right-10 {
+	right: 2.5rem;
+}
+.right-20 {
+	right: 5rem;
+}
+.right-40 {
+	right: 10rem;
+}
 .top-3 {
 	top: 0.75rem;
 }
@@ -1321,6 +1330,9 @@ select {
 }
 .w-48 {
 	width: 12rem;
+}
+.w-64 {
+	width: 18rem;
 }
 .w-auto {
 	width: auto;
