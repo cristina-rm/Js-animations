@@ -1130,6 +1130,10 @@ select {
 	margin-left: auto;
 	margin-right: auto;
 }
+.my-12 {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
 .my-6 {
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;

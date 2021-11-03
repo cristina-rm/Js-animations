@@ -6,6 +6,7 @@
 
 body {
     font-family: sans-serif;
+    perspective: 1000px;
 }
 
 .intro {
@@ -33,16 +34,47 @@ body {
     color: black;
 }
 
-#section1 h1,
-#section3 h1 {
+#section1 h1 {
     padding-top: 100px;
     text-align: center;
     font-size: 80px;
 }
 
-#section2 {
-    /*opacity: 50%;*/
-    /*padding-top: 100px;
-    text-align: center;
-    font-size: 80px;*/
+#section2 h1,
+#section3 h1 {
+    font-size: 80px;
+}
+
+/*Section 2*/
+#section2 .title2,
+#section2 .description2,
+#section2 .truck-image {
+    transition: all 0.75s ease-out;
+}
+
+#section2 .card2 {
+    min-height: 40vh;
+    transform-style: preserve-3d;
+}
+
+#section2 .card2 .truck-image,
+#section3 .card3 .truck-image {
+    min-height: 80vh;
+}
+
+#section3 .card3 {
+    min-height: 40vh;
+    transform-style: preserve-3d;
+}
+
+/*Section 3*/
+#section3 .card3 .title3 h1,
+#section3 .card3 .description3 h3,
+#section3 .card3 .truck-image img {
+    transition: all 0.75s ease-out;
+}
+
+.truck-image {
+  transform: scale(1);
+  transition: transform .5s;
 }
